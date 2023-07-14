@@ -37,7 +37,7 @@ Make sure to tailor the metadata of NuGet packages of your libraries accordingly
 ## 🤖 Automating the flow with GitHub Actions 🤖
 This repository utilizes GitHub Actions to automate the .NET build, pack, and publish process. As a result, every time you push a commit to any branch, a new workflow is triggered.
 
-This is made possible with a defined workflow in `.github/workflows/dotnet.yml.` The workflow is designed to:
+This is made possible with a defined workflow in `.github/workflows/main.yml.` The workflow is designed to:
 
 * <b>Set up the .NET environment</b> - Prepares the .NET environment using the version specified in the workflow file.
 * <b>Restore dependencies</b> - Recovers any dependencies needed for the project.
