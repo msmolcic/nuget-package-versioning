@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "Mario Smolcic",
+      "copyrightText": "Copyright (C) {companyName}.\r\nYou are permitted to fork, copy, or use this content in any other form you can imagine.",
+      "xmlHeader": true,
+      "fileNamingConvention": "metadata",
+      "documentInterfaces": false,
+      "documentExposedElements": false,
+      "documentInternalElements": false
+    }
+  }
+}

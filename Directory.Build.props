@@ -1,0 +1,46 @@
+<Project>
+
+    <!--
+        Enable implicit usings and nullable reference types in all projects.
+        Treating warnings as errors through StyleCop.
+    -->
+    <PropertyGroup>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!--
+            Make sure any documentation comments which are included in code get checked for syntax during the build, but do
+            not report warnings for missing comments.
+
+            CS1573: Parameter 'parameter' has no matching param tag in the XML comment for 'parameter' (but other parameters do)
+            CS1591: Missing XML comment for publicly visible type or member 'Type_or_Member'
+          -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1573;1591;1701;1702;1705;1712</NoWarn>
+    </PropertyGroup>
+
+    <!-- Enable code analyzers in all projects. -->
+    <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all" />
+    </ItemGroup>
+
+    <!-- Include stylecop.json and ruleset in all projects. -->
+    <ItemGroup>
+        <None Include="$(MSBuildThisFileDirectory)*.ruleset" Link="%(Filename)%(Extension)" />
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json">
+            <Link>stylecop.json</Link>
+        </AdditionalFiles>
+    </ItemGroup>
+
+    <!-- Makes internal classes visible in the Test project of that assembly. -->
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>$(MSBuildProjectName).Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+</Project>

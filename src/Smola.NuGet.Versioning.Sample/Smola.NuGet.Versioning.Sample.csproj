@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Smola.NuGet.Versioning</PackageId>
+    <Title>NuGet Versioning</Title>
+    <Description>Sample flow for NuGet package versioning.</Description>
+    <Authors>Mario Smolcic</Authors>
+    <Copyright>Copyright $([System.DateTime]::Now.Year) Mario Smolcic</Copyright>
+    <RepositoryUrl>https://github.com/msmolcic/nuget-package-versioning</RepositoryUrl>
+    <PackageTags>nuget-versioning mario-smolcic</PackageTags>
+  </PropertyGroup>
+
+</Project>
