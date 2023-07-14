@@ -1,3 +1,9 @@
+[![NuGet Package](https://img.shields.io/nuget/v/Smola.NuGet.Versioning.svg)](https://www.nuget.org/packages/Smola.NuGet.Versioning/)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/YourGithubUsername/YourRepositoryName/blob/main/LICENSE)
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yourusername)](https://www.linkedin.com/in/msmolcic/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/MarioSmolcic?style=social)](https://twitter.com/MarioSmolcic)
+
+
 # 🚀 NuGet Package Versioning 🚀
 Welcome! The idea behind this repository is to showcase an efficient and streamlined workflow for NuGet package versioning and publishing. To do so, we'll utilize the power of [GitVersion](https://gitversion.net/docs/learn/how-it-works). The goal? To calculate the current package version, publish pre-release versions, and ultimately streamline testing within your actual project before you decide to merge your changes and release it as part of your next official version.
 
@@ -7,6 +13,8 @@ Crack open the `GitVersion.yml` to reveal the core of our operations. Here, you'
 Your feature or hotfix branch getting merged into the main branch signals the new package launch! The patch version gets bumped by default and a new official release gets published to the public NuGet repository. Branching out from the main branch triggers another bump in the patch version - your branch is now considered a release candidate for the new version that will emerge post-merge.
 
 Each commit to your feature branch nudges up the padded version, offering the flexibility to push multiple release candidate versions. This feature comes handy in case you spot something amiss with your library code while testing its integration within one of your services.
+
+However, you can always manually bump the version by either tagging your commit or through your commit message. Take a look at it [here](https://gitversion.net/docs/reference/version-increments).
 
 ## 🕵️‍♂️ Peek at the version locally 🕵️‍♂️
 Want to check what you're dealing with locally? Step right into the repository root on your machine and type `dotnet tool restore` into your command line. This will make use of the `dotnet-tools.json` definition from the `.config` directory and restore the dependencies you need to hit the ground running. For now, we're dealing only with the `gitversion` tool.
