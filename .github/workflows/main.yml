@@ -19,6 +19,9 @@ jobs:
     - name: Restore tools
       run: dotnet tool restore
 
+    - name: Check
+      run: dotnet gitversion /output json /showvariable NuGetVersionV2
+
     - name: Use GitVersion
       id: gitversion
       run: echo "version={$(dotnet gitversion /output json /showvariable NuGetVersionV2)}" >> $GITHUB_OUTPUT
