@@ -24,7 +24,7 @@ jobs:
 
     - name: Use GitVersion
       id: gitversion
-      run: echo "version={$(dotnet gitversion /output json /showvariable NuGetVersionV2)}" >> $GITHUB_OUTPUT
+      run: echo "version=$(dotnet gitversion /output json /showvariable NuGetVersionV2)" >> $GITHUB_OUTPUT
 
     - name: Restore dependencies
       run: dotnet restore
@@ -36,7 +36,7 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
 
     - name: Pack
-      run: dotnet pack --no-build --configuration Release /p:Version="${{ steps.gitversion.outputs.version }}" --output artifacts
+      run: dotnet pack --no-build --configuration Release /p:Version=${{ steps.gitversion.outputs.version }} --output artifacts
 
     - name: Publish
       run: dotnet nuget push "artifacts/*.nupkg" --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
