@@ -21,7 +21,7 @@ jobs:
 
     - name: Use GitVersion
       id: gitversion
-      run: echo "::set-output name=version::$(dotnet gitversion /output json /showvariable NuGetVersionV2)"
+      run: echo "{version}={$(dotnet gitversion /output json /showvariable NuGetVersionV2)}" >> $GITHUB_OUTPUT
 
     - name: Restore dependencies
       run: dotnet restore
