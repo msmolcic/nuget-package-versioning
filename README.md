@@ -1,4 +1,4 @@
-[![NuGet Package](https://img.shields.io/nuget/v/Dotnet.NuGet.Versioning.svg)](https://www.nuget.org/packages/Dotnet.NuGet.Versioning/)
+[![NuGet Package](https://img.shields.io/nuget/v/Smola.NuGet.Versioning.svg)](https://www.nuget.org/packages/Dotnet.NuGet.Versioning/)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/YourGithubUsername/YourRepositoryName/blob/main/LICENSE)
 [![Email](https://img.shields.io/badge/Email-gray?logo=gmail&style=flat-square)](mailto:mario.smolcic@rokolabs.com)
 [![Stack Overflow](https://img.shields.io/badge/Stackoverflow-gray?logo=stackoverflow&style=flat-square)](https://stackoverflow.com/users/3284114/msmolcic)
