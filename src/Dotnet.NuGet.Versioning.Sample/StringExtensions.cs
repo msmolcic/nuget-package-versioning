@@ -5,7 +5,7 @@
 //
 // </copyright>
 
-namespace Smola.NuGet.Versioning.Sample;
+namespace Dotnet.NuGet.Versioning.Sample;
 
 public static class StringExtensions
 {

@@ -1,4 +1,4 @@
-[![NuGet Package](https://img.shields.io/nuget/v/Smola.NuGet.Versioning.svg)](https://www.nuget.org/packages/Smola.NuGet.Versioning/)
+[![NuGet Package](https://img.shields.io/nuget/v/Dotnet.NuGet.Versioning.svg)](https://www.nuget.org/packages/Dotnet.NuGet.Versioning/)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/YourGithubUsername/YourRepositoryName/blob/main/LICENSE)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yourusername)](https://www.linkedin.com/in/msmolcic/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/MarioSmolcic?style=social)](https://twitter.com/MarioSmolcic)
@@ -30,7 +30,7 @@ For each of your packages, you'll want to add some context, including descriptio
 
 ```
 <PropertyGroup>
-  <PackageId>Smola.NuGet.Versioning</PackageId>
+  <PackageId>Dotnet.NuGet.Versioning</PackageId>
   <Title>NuGet Versioning</Title>
   <Description>Sample flow for NuGet package versioning.</Description>
   <Authors>Mario Smolcic</Authors>
