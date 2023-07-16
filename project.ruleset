@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules for NuGet Package Versioning service" Description="Code analysis rules for NuGet Package Versioning service." ToolsVersion="17.0">
+<RuleSet Name="Project Rules" Description="Code analysis rules for the .NET project." ToolsVersion="17.0">
   <Rules AnalyzerId="AsyncUsageAnalyzers" RuleNamespace="AsyncUsageAnalyzers">
     <Rule Id="UseConfigureAwait" Action="None" />
   </Rules>
