@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dotnet.NuGet.Versioning.Sample\Dotnet.NuGet.Versioning.Sample.csproj" />
+    <ProjectReference Include="..\..\src\Smola.NuGet.Versioning.Sample\Smola.NuGet.Versioning.Sample.csproj" />
   </ItemGroup>
 
 </Project>

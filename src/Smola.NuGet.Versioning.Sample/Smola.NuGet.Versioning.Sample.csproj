@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>Dotnet.NuGet.Versioning</PackageId>
+    <PackageId>Smola.NuGet.Versioning</PackageId>
     <Title>NuGet Versioning</Title>
     <Description>Sample flow for NuGet package versioning.</Description>
     <Authors>Mario Smolcic</Authors>
