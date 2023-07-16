@@ -5,7 +5,7 @@
 //
 // </copyright>
 
-namespace Dotnet.NuGet.Versioning.Sample.Test;
+namespace Smola.NuGet.Versioning.Sample.Test;
 
 using Xunit;
 

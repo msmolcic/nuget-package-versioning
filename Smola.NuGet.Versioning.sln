@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7D2EADB-B6D5-4034-AB75-67C01E706EFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.NuGet.Versioning.Sample", "src\Dotnet.NuGet.Versioning.Sample\Dotnet.NuGet.Versioning.Sample.csproj", "{149B621B-66FA-4A85-8291-AA0338386FA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smola.NuGet.Versioning.Sample", "src\Smola.NuGet.Versioning.Sample\Smola.NuGet.Versioning.Sample.csproj", "{149B621B-66FA-4A85-8291-AA0338386FA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configuration", "configuration", "{DFFBB76F-C4FE-4FB4-9DF2-681723DE9889}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configuration", "configurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D9BCFE24-599C-424F-8392-4D7642171084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.NuGet.Versioning.Sample.Test", "tests\Dotnet.NuGet.Versioning.Sample.Test\Dotnet.NuGet.Versioning.Sample.Test.csproj", "{F3FBFAA7-0DE4-4D2A-97CF-91374BCC14C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smola.NuGet.Versioning.Sample.Test", "tests\Smola.NuGet.Versioning.Sample.Test\Smola.NuGet.Versioning.Sample.Test.csproj", "{F3FBFAA7-0DE4-4D2A-97CF-91374BCC14C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
