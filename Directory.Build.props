@@ -43,4 +43,14 @@
         </AssemblyAttribute>
     </ItemGroup>
 
+    <!--
+        This is necessary for mocking internal types when using certain unit testing
+        frameworks (like Moq or NSubstitute) that leverage Castle's DynamicProxy library.
+    -->
+    <ItemGroup>
+      <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+        <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+      </AssemblyAttribute>
+    </ItemGroup>
+
 </Project>
